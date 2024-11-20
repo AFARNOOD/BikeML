@@ -62,6 +62,13 @@ This project utilizes data from two key sources:
 
    [Data Source](https://bixi.com/en/open-data)
 
+   ## Download the BIXI Data
+Due to size constraints, the BIXI dataset is not included in this repository. Please download the data manually:
+
+1. Visit the [BIXI Open Data Portal](https://bixi.com/en/open-data).
+2. Download the dataset for the year 2021.
+3. Save the file as `bixi_data_2021.csv` in the `BikeML/data/` directory.
+
 ---
 
 ### 5.1. Data Acquisition <a name="data-acquisition"></a>
