@@ -22,13 +22,13 @@
 
 ## 1. Overview <a name="overview"></a>
 
-BIXI is a popular bike-sharing system in Montreal that offers a sustainable alternative for urban travel. This project explores the interplay between weather conditions and BIXI trip patterns, focusing on how factors like temperature, humidity, and cloud cover impact user behavior. By leveraging machine learning, we aim to uncover meaningful insights that support the optimization of BIXI's operations.
+This project explores the interplay between weather conditions and bike-sharing users' trip patterns, focusing on how factors like temperature, humidity, and cloud cover impact user behaviour. By leveraging machine learning, we aim to uncover meaningful insights that support the optimization of bike-sharing companies' operations.
 
 ---
 
 ## 2. Project Goals <a name="goals"></a>
 
-The primary aim of this project is to analyze how weather variables influence the duration and frequency of BIXI bike trips. By building predictive models, we hope to provide actionable insights to improve user satisfaction and operational efficiency.
+The primary aim of this project is to analyze how weather variables influence the duration and frequency of bike trips. By building predictive models, we hope to provide actionable insights to improve user satisfaction and operational efficiency.
 
 ---
 
@@ -57,7 +57,7 @@ This project utilizes data from two key sources:
    [Data Source](https://www.canada.ca/en/environment-climate-change.html)
 
 2. **BIXI Data**:
-   - Open data on BIXI bike trips for 2022, including station locations and trip details.
+   - Open data on BIXI bike trips for 2021, including station locations and trip details.
    - Accessible via BIXI's open data portal.
 
    [Data Source](https://bixi.com/en/open-data)
