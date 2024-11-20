@@ -1,0 +1,22 @@
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore virtual environment folders
+venv/
+.env/
+
+# Ignore data files (optional if your dataset is too large or private)
+data/
+
+# Ignore Docker-related files (if you want to exclude build outputs)
+*.log
+*.pid
+
+# Ignore IDE/editor config files
+.vscode/
+.idea/
