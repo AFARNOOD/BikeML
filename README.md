@@ -1,6 +1,6 @@
 # Analyzing The Behavior Of The Bike Sharing Service Users In Montreal
 
-<img src="https://github.com/AFARNOOD/BikeML/blob/main/imgs/DALL%C2%B7E%202024-11-20%2011.40.15%20-%20A%20wide%20aspect%20ratio%2C%20minimalistic%20illustration%20of%20urban%20bike-sharing%20in%20Montreal.%20The%20design%20includes%20a%20simple%20bicycle%20next%20to%20a%20modern%20urban%20bike%20rac.webp" width="600" height="400">
+<img src="https://github.com/AFARNOOD/BikeML/blob/main/imgs/DALL%C2%B7E%202024-11-20%2011.40.15%20-%20A%20wide%20aspect%20ratio%2C%20minimalistic%20illustration%20of%20urban%20bike-sharing%20in%20Montreal.%20The%20design%20includes%20a%20simple%20bicycle%20next%20to%20a%20modern%20urban%20bike%20rac.webp" width="700" height="400">
 
 ## LIST
 
