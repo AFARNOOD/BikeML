@@ -52,7 +52,7 @@ This project utilizes data from two key sources:
 
 1. **Climate Data**:
    - Daily and hourly weather data for Montreal, sourced from Environment and Climate Change Canada (ECCC).
-   - Focused on 2022 weather observations for Trudeau Airport (CYUL).
+   - Focused on 2021 weather observations for Trudeau Airport (CYUL).
 
    [Data Source](https://www.canada.ca/en/environment-climate-change.html)
 
