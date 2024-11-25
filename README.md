@@ -88,7 +88,7 @@ BikeML-API/
 ├── Dockerfile                                  # Dockerfile for containerization (optional)
 └── README.md                                   # Project description and instructions
 
-```plaintext
+plaintext
 
 ---
 
