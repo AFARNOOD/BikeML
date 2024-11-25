@@ -87,3 +87,7 @@ BikeML-API/
 ├── requirements.txt                            # Python dependencies
 ├── Dockerfile                                  # Dockerfile for containerization (optional)
 └── README.md                                   # Project description and instructions
+
+---
+
+## 5. Directory Structure <a name="directory-structure"></a>
