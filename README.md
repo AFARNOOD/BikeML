@@ -1,123 +1,89 @@
-# Analyzing The Behavior Of The Bike Sharing Service Users In Montreal
+# BikeML-API: Analyzing the Behavior of Bike-Sharing Users in Montreal
 
 <img src="https://github.com/AFARNOOD/BikeML/blob/main/imgs/DALL%C2%B7E%202024-11-20%2011.40.15%20-%20A%20wide%20aspect%20ratio%2C%20minimalistic%20illustration%20of%20urban%20bike-sharing%20in%20Montreal.%20The%20design%20includes%20a%20simple%20bicycle%20next%20to%20a%20modern%20urban%20bike%20rac.webp" width="700" height="400">
 
-## LIST
+---
 
 ## Contents
 
 - [1. Overview](#overview)
-- [2. Project Goals](#goals)
-- [3. Approach](#approach)
-- [4. Anticipated Insights](#insights)
-- [5. Data Sources](#data)
-   - [5.1. Data Acquisition](#data-acquisition)
-- [6. Weather and Bike-Sharing](#weather-bike-sharing)
-   - [6.1. Feature Overview](#feature-overview)
-- [7. Tools and Techniques](#tools)
-- [8. Reproducibility and Setup](#setup)
-   - [8.1. Data Preparation](#data-prep)
+- [2. Project Goals](#project-goals)
+- [3. Project Features](#project-features)
+- [4. Tools and Frameworks](#tools-and-frameworks)
+- [5. Directory Structure](#directory-structure)
+- [6. Reproducibility](#reproducibility)
+- [7. How to Use the API](#api-usage)
+- [8. Data Sources](#data-sources)
 
- ---
+---
 
 ## 1. Overview <a name="overview"></a>
 
-This project explores the interplay between weather conditions and bike-sharing users' trip patterns, focusing on how factors like temperature, humidity, and cloud cover impact user behaviour. By leveraging machine learning, we aim to uncover meaningful insights that support the optimization of bike-sharing companies' operations.
+The **BikeML-API** explores the relationship between weather conditions and bike-sharing usage in Montreal. It includes a machine learning pipeline to predict trip durations based on weather and temporal features, as well as an API for serving predictions. The findings aim to help bike-sharing operators like BIXI optimize operations and user satisfaction.
 
 ---
 
-## 2. Project Goals <a name="goals"></a>
+## 2. Project Goals <a name="project-goals"></a>
 
-The primary aim of this project is to analyze how weather variables influence the duration and frequency of bike trips. By building predictive models, we hope to provide actionable insights to improve user satisfaction and operational efficiency.
-
----
-
-## 3. Approach <a name="approach"></a>
-
-To achieve these goals, machine learning methods will be applied to analyze the relationships between trip characteristics and climatic conditions. By training models on relevant datasets, we can identify trends and correlations that enhance our understanding of user preferences under various weather scenarios.
+The goals of this project are:
+1. To analyze how weather conditions affect the duration of bike-sharing trips.
+2. To build and deploy a machine learning model that predicts trip durations.
+3. To provide actionable insights for bike-sharing companies to optimize bike availability.
 
 ---
 
-## 4. Anticipated Insights <a name="insights"></a>
+## 3. Project Features <a name="project-features"></a>
 
-- Understanding user behavior in relation to changing weather conditions.
-- Identifying patterns that could help BIXI optimize bike availability during different seasons.
-- Informing potential strategies to encourage usage in less favorable weather.
-
----
-
-## 5. Data Sources <a name="data"></a>
-
-This project utilizes data from two key sources:
-
-1. **Climate Data**:
-   - Daily and hourly weather data for Montreal, sourced from Environment and Climate Change Canada (ECCC).
-   - Focused on 2021 weather observations for Trudeau Airport (CYUL).
-
-   [Data Source](https://www.canada.ca/en/environment-climate-change.html)
-
-2. **BIXI Data**:
-   - Open data on BIXI bike trips for 2021, including station locations and trip details.
-   - Accessible via BIXI's open data portal.
-
-   [Data Source](https://bixi.com/en/open-data)
-
-   ## Download the BIXI Data
-Due to size constraints, the BIXI dataset is not included in this repository. Please download the data manually:
-
-1. Visit the [BIXI Open Data Portal](https://bixi.com/en/open-data).
-2. Download the dataset for the year 2021.
-3. Save the file as `bixi_data_2021.csv` in the `BikeML/data/` directory.
+- **Weather and Trip Data Integration**: Combining weather observations with BIXI trip data for comprehensive analysis.
+- **Machine Learning Model**: A Random Forest model trained to predict trip durations.
+- **API Deployment**: A Flask API for serving predictions based on user-input weather and temporal features.
 
 ---
 
-### 5.1. Data Acquisition <a name="data-acquisition"></a>
+## 4. Tools and Frameworks <a name="tools-and-frameworks"></a>
 
-Data was gathered from the sources above, ensuring a comprehensive dataset for analysis. This includes detailed weather parameters such as temperature, humidity, and wind chill, along with granular trip data from the BIXI system.
+### Tools:
+- **Python**: Data preprocessing, model training, and API development.
+- **Jupyter Notebooks**: For exploratory data analysis (EDA) and feature engineering.
 
----
+### Libraries:
+- **Scikit-learn**: Model development and evaluation.
+- **Flask**: Deployment of the prediction API.
+- **Pandas/NumPy**: Data manipulation.
+- **Matplotlib/Seaborn**: Visualization.
 
-## 6. Weather and Bike-Sharing <a name="weather-bike-sharing"></a>
-
-This project analyzes various weather and trip features, such as:
-
-- **Climate Data Features**:
-  - Temperature (min, max, average).
-  - Humidity and cloud cover.
-  - Wind chill and humidex.
-
-- **BIXI Data Features**:
-  - Station names and geographic coordinates.
-  - Start and end times of trips.
-  - Boroughs of trip origins and destinations.
-
-### 6.1. Feature Overview <a name="feature-overview"></a>
-
-A complete description of the features used in the analysis is available in the project repository.
+### Other Tools:
+- **Git LFS**: For tracking large files in the repository.
+- **Docker** (Optional): For containerizing the API.
 
 ---
 
-## 7. Tools and Techniques <a name="tools"></a>
+## 5. Directory Structure <a name="directory-structure"></a>
 
-The following tools and concepts are used:
-
-- **Python** for data manipulation and analysis.
-- **Scikit-learn** and **XGBoost** for machine learning.
-- **FastAPI** for model deployment and serving predictions.
-- **Machine Learning Pipelines** to streamline the workflow.
-
----
-
-## 8. Reproducibility and Setup <a name="setup"></a>
-
-To reproduce the analysis and results, follow these steps:
-
-### 8.1. Data Preparation <a name="data-prep"></a>
-
-1. Clone the project repository.
-2. Download the dataset by running the provided data acquisition notebook or script.
-3. Ensure the downloaded data is stored in the appropriate directory.
-
-> Note: Running the data processing notebook may require significant memory and time (approximately 10–15 minutes).
-
----
+```plaintext
+BikeML-API/
+│
+├── data/
+│   ├── bixi_data_2021.csv                      # BIXI bike-sharing trip data (Git LFS tracked)
+│   ├── weather_data_2021.csv                   # Weather data for Montreal (Git LFS tracked)
+│   ├── refined_combined_data_with_features.xls # Final processed dataset (Git LFS tracked)
+│   └── ...
+│
+├── imgs/                                       # (Optional) Visualization images
+│   └── ...
+│
+├── models/
+│   ├── bike_duration_predictor.pkl             # Trained model for predictions
+│   ├── tuned_random_forest.pkl                 # Tuned Random Forest model
+│   └── ...
+│
+├── notebooks/
+│   ├── BikeML01.ipynb                          # Data preprocessing and feature engineering
+│   ├── BikeML02.ipynb                          # Model training and evaluation
+│   └── ...
+│
+├── app.py                                      # Flask API script
+├── predict_request.ps1                         # Script for making POST requests to the API
+├── requirements.txt                            # Python dependencies
+├── Dockerfile                                  # Dockerfile for containerization (optional)
+└── README.md                                   # Project description and instructions
