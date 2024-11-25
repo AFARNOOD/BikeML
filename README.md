@@ -123,8 +123,27 @@ To use the API for predictions, follow these steps:
 
    This will start the server on http://127.0.0.1:5000.
 
-    ```bash
-    Send a POST Request: Use the provided predict_request.ps1 script to send a request with input data for prediction. The
+2. Send a POST Request: Use the provided predict_request.ps1 script to send a request with input data for prediction. The
    input JSON must include the following features:
-     ```
+
+     ```bash 
+{
+    "max_temp_c": 20,
+    "min_temp_c": 7,
+    "temp_range_c": 18,
+    "total_precip_mm": 2,
+    "snow_on_grnd_cm": 0,
+    "spd_of_max_gust_kmh": 10,
+    "is_rainy": 1,
+    "is_snowy": 0,
+    "is_windy": 0,
+    "start_hour": 9,
+    "start_weekday": 1,
+    "is_weekend": 0
+}
+   ```
+
+
+
+   
 
