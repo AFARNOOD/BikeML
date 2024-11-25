@@ -143,7 +143,7 @@ To use the API for predictions, follow these steps:
    }
    ```
    
-   3. **Example PowerShell Command**:
+3. **Example PowerShell Command**:
    Run the following command in PowerShell to send the prediction request:
 
    ```powershell
@@ -153,7 +153,7 @@ To use the API for predictions, follow these steps:
        -Body '{"max_temp_c": 20, "min_temp_c": 7, "temp_range_c": 18, "total_precip_mm": 2, "snow_on_grnd_cm": 0, "spd_of_max_gust_kmh": 10, "is_rainy": 1, "is_snowy": 0, "is_windy": 0, "start_hour": 9, "start_weekday": 1, "is_weekend": 0}'
    ```
 
-3. **Example cURL Command**:
+4. **Example cURL Command**:
    If you prefer using cURL, run this command in your terminal:
 
    ```powershell
@@ -163,13 +163,28 @@ To use the API for predictions, follow these steps:
 
    ```
 
-3. **Expected Output**:
+5. **Expected Output**:
    The API will respond with the predicted trip duration in seconds. Example response:
 
    ```powershell
    {
     "predicted_duration_sec": 789
-}
+   }
    ```
 
-   ```
+
+> **Note**: For other tools or environments, ensure the JSON request body matches the required format and is sent as a POST request to the `/predict` endpoint.
+
+---
+
+## Weather Data: <a name="data-sources"></a>
+
+* **Run the Flask App**:
+   Ensure the Flask API is running locally. Start the API by executing the following command in your terminal:
+
+   ```bash
+   python app.py
+      ```
+
+   The server will run on `http://127.0.0.1:5000`.
+
