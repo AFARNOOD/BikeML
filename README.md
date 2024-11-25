@@ -177,14 +177,22 @@ To use the API for predictions, follow these steps:
 
 ---
 
-## Weather Data: <a name="data-sources"></a>
+## 8. Data Sources <a name="data-sources"></a>
 
-* **Run the Flask App**:
-   Ensure the Flask API is running locally. Start the API by executing the following command in your terminal:
+This project uses two primary datasets:
 
-   ```bash
-   python app.py
-      ```
+1. **Weather Data**:
+   - Source: Environment and Climate Change Canada (ECCC).
+   - Description: Includes daily and hourly weather data for Montreal in 2021.
+   - Features: Temperature, precipitation, wind speed, and other climatic conditions.
 
-   The server will run on `http://127.0.0.1:5000`.
+   [Download Weather Data](https://climate.weather.gc.ca/)
 
+2. **BIXI Data**:
+   - Source: BIXI Montreal Open Data Portal.
+   - Description: Contains detailed trip records of BIXI bike-sharing users for 2021.
+   - Features: Trip start and end times, station locations, and duration.
+
+   [Download BIXI Data](https://bixi.com/en/open-data)
+
+> **Note**: Due to size constraints, the datasets are not included in the repository but can be downloaded using the links provided.
