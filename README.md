@@ -115,35 +115,29 @@ plaintext
 To use the API for predictions, follow these steps:
 
 1. **Run the Flask App**:
-   Make sure the Flask API is running locally. You can start the API by executing the following command in your terminal:
+   Ensure the Flask API is running locally. Start the API by executing the following command in your terminal:
 
    ```bash
    python app.py
-   ```
+      ```
 
-   This will start the server on http://127.0.0.1:5000.
+   The server will run on `http://127.0.0.1:5000`.
 
-2. Send a POST Request: Use the provided predict_request.ps1 script to send a request with input data for prediction. The
-   input JSON must include the following features:
+2. **Send a POST Request**:
+   Use the provided `predict_request.ps1` script or your preferred tool (e.g., Postman, cURL) to send a request with input data for prediction. The input JSON must include the following features:
 
-     ```bash 
-{
-    "max_temp_c": 20,
-    "min_temp_c": 7,
-    "temp_range_c": 18,
-    "total_precip_mm": 2,
-    "snow_on_grnd_cm": 0,
-    "spd_of_max_gust_kmh": 10,
-    "is_rainy": 1,
-    "is_snowy": 0,
-    "is_windy": 0,
-    "start_hour": 9,
-    "start_weekday": 1,
-    "is_weekend": 0
-}
-   ```
-
-
-
-   
-
+   ```json
+   {
+       "max_temp_c": 20,
+       "min_temp_c": 7,
+       "temp_range_c": 18,
+       "total_precip_mm": 2,
+       "snow_on_grnd_cm": 0,
+       "spd_of_max_gust_kmh": 10,
+       "is_rainy": 1,
+       "is_snowy": 0,
+       "is_windy": 0,
+       "start_hour": 9,
+       "start_weekday": 1,
+       "is_weekend": 0
+   }
