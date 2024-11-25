@@ -110,4 +110,21 @@ plaintext
 4. Run the Jupyter Notebooks in the `notebooks/` directory to preprocess the data or retrain the model.
 
 
+## 7. How to Use the API <a name="api-usage"></a>
+
+To use the API for predictions, follow these steps:
+
+1. **Run the Flask App**:
+   Make sure the Flask API is running locally. You can start the API by executing the following command in your terminal:
+
+   ```bash
+   python app.py
+   ```
+
+   This will start the server on http://127.0.0.1:5000.
+
+    ```bash
+    Send a POST Request: Use the provided predict_request.ps1 script to send a request with input data for prediction. The
+   input JSON must include the following features:
+     ```
 
