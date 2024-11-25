@@ -106,8 +106,8 @@ plaintext
    ```bash
    pip install -r requirements.txt
 
-3. Download the required datasets or ensure they are placed in the data/ directory.
-4. Run the Jupyter Notebooks in the notebooks/ directory to preprocess the data or retrain the model.
+3. Download the required datasets or ensure they are placed in the `data/` directory.
+4. Run the Jupyter Notebooks in the `notebooks/` directory to preprocess the data or retrain the model.
 
 
 
