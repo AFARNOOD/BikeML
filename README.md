@@ -90,4 +90,11 @@ BikeML-API/
 
 ---
 
-## 5. Directory Structure <a name="directory-structure"></a>
+## 6. Reproducibility <a name="reproducibility"></a>
+
+### Steps to Reproduce:
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/AFARNOOD/BikeML-API.git
+   cd BikeML-API
+
