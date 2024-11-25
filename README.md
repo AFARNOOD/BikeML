@@ -195,4 +195,3 @@ This project uses two primary datasets:
 
    [Download BIXI Data](https://bixi.com/en/open-data)
 
-> **Note**: Due to size constraints, the datasets are not included in the repository but can be downloaded using the links provided.
