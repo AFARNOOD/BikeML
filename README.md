@@ -90,6 +90,8 @@ BikeML-API/
 
 plaintext
 
+```
+
 ---
 
 ## 6. Reproducibility <a name="reproducibility"></a>
@@ -99,4 +101,13 @@ plaintext
    ```bash
    git clone https://github.com/AFARNOOD/BikeML-API.git
    cd BikeML-API
+
+2. Set up Python dependencies:
+   ```bash
+   pip install -r requirements.txt
+
+3. Download the required datasets or ensure they are placed in the data/ directory.
+4. Run the Jupyter Notebooks in the notebooks/ directory to preprocess the data or retrain the model.
+
+
 
