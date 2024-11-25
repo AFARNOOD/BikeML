@@ -141,3 +141,35 @@ To use the API for predictions, follow these steps:
        "start_weekday": 1,
        "is_weekend": 0
    }
+   ```
+   
+   3. **Example PowerShell Command**:
+   Run the following command in PowerShell to send the prediction request:
+
+   ```powershell
+   Invoke-RestMethod -Uri http://127.0.0.1:5000/predict `
+       -Method POST `
+       -ContentType "application/json" `
+       -Body '{"max_temp_c": 20, "min_temp_c": 7, "temp_range_c": 18, "total_precip_mm": 2, "snow_on_grnd_cm": 0, "spd_of_max_gust_kmh": 10, "is_rainy": 1, "is_snowy": 0, "is_windy": 0, "start_hour": 9, "start_weekday": 1, "is_weekend": 0}'
+   ```
+
+3. **Example cURL Command**:
+   If you prefer using cURL, run this command in your terminal:
+
+   ```powershell
+   curl -X POST http://127.0.0.1:5000/predict \
+     -H "Content-Type: application/json" \
+     -d '{"max_temp_c": 20, "min_temp_c": 7, "temp_range_c": 18, "total_precip_mm": 2, "snow_on_grnd_cm": 0, "spd_of_max_gust_kmh": 10, "is_rainy": 1, "is_snowy": 0, "is_windy": 0, "start_hour": 9, "start_weekday": 1, "is_weekend": 0}'
+
+   ```
+
+3. **Expected Output**:
+   The API will respond with the predicted trip duration in seconds. Example response:
+
+   ```powershell
+   {
+    "predicted_duration_sec": 789
+}
+   ```
+
+   ```
